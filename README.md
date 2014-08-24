@@ -27,6 +27,14 @@ This also outputs a confusion matrix
 ![](/TwoClassesNoSubsampling/conf_matrix_5lassifier.png)
 The classifiers alone all have accuracies above 93%
 but combined their accuracy is 81.06%
+
+### NaiveBayesDownsampledVersion.py
+![](/NaiveBayesDownsampledVersion/conf_matrix.png)
+accuracy is sadly 82,43%
+
+### NaiveBayesTwoClassesDownsampledVersion.py
+![](/ NaiveBayesTwoClassesDownsampledVersion/conf_matrix_5lassifier.png)
+accuracy is 79.74%
  
 ### NaiveBayesUI.py
 This uses pygame to allow you to draw your own numbers.
