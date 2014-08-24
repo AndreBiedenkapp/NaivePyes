@@ -361,7 +361,7 @@ if __name__ == '__main__': # Main method
     # then the testing data
     test_set, test_labels = nb.read_MNIST(10000, not training)
     print'DONE!\n'
-    print'downsampling'
+    print'Downsampling..'
     training_set = nb.downsample(training_set)
     test_set = nb.downsample(test_set)
     print 'Training'
