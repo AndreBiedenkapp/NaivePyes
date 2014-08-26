@@ -118,7 +118,7 @@ class NaiveBayes():
             for i in range(len(labels)):
                 self.prClass[labels[i]] += 1 # Count how many times a class appears in the labels list.
                 for j in range(len(images[i])):
-                    if images[i][j] < 100:
+                    if images[i][j] < 26:
                         self.prPixelGivenClass[labels[i]][j] += 1   # For every class, count how many times
                                                                     # a pixel is black.
                         
@@ -157,7 +157,7 @@ class NaiveBayes():
         for i in range(len(self.classes)):
             predict = 0.0
             for j in range(len(image)):
-                if image[j] < 100:
+                if image[j] < 26:
                     predict += np.log(self.prPixelGivenClass[i][j]) # If the pixel is black, use its probability
                                                                     # that was learned in the train method
                 else:
